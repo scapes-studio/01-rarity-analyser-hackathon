@@ -84,7 +84,7 @@ rarity(nose) = 1/(9788/10000) = 1.02
 
 All of this can be done on a per collection basis and data can be stored in memory & exposed via a simple API that spits out the metadata + rarity score data for each token. I imagine something like this:
 
-```json
+```js
 // GET /api/0
 {
     "id": 0,
