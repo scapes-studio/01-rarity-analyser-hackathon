@@ -80,10 +80,11 @@ rarity(nose) = 1/(9788/10000) = 1.02
 - [ ] Derive a rarity score for each attribute of each NFT item. Example: Property "Type", Attribute "Ape"; 24 of 10000 have this attribute/property combination; `rarity_score = 1/(24/10000) = 416.67`
 - [ ] Derive a rarity score for each NFT in the collection. The rarity score for each NFT is the **sum of all attributes**.
 - [ ] Account for missing `trait_type`s of an NFT.
-- [ ] Calculate the Rarity Score for each token (SUM of all rare trait attributes / missing traits).
+- [ ] Account for the `trait_count` of an NFT.
+- [ ] Calculate the Rarity Score for each token (SUM of all rare trait attributes / missing traits / trait counts).
 - [ ] Compute and store a `collection-rarities.json` file which can be exported for use elsewhere for the given collection.
 
-All of this can be done on a per collection basis and data can be stored in memory & exposed via a simple API that spits out the metadata + rarity score data for each token. I imagine something like this:
+All of this can be done on a per collection basis and data can be stored in memory & exposed via a simple API that spits out the metadata + rarity score data for each token. I imagine something like this (doesn't have to be exactly this structure - just an example...):
 
 ```js
 // GET /api/0
@@ -102,6 +103,18 @@ All of this can be done on a per collection basis and data can be stored in memo
             // ...
         },
     ],
+    "missing_traits": [
+      {
+        "trait_type": "glasses",
+        "percentile": "0.123",
+        "rarity_score": "123.45"
+      }
+    ],
+    "trait_count": {
+      "count": 4,
+      "percentile": "0.45",
+      "rarity_score": "2.0123"
+    },
     "rarity_score": "129.59", // (The sum of all `attribute` rarity scores + missing trait rarity scores)
 },
 ```
