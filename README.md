@@ -19,8 +19,7 @@ All other participants in the first PunkScapes Hackathon will have savored the j
 3. The app has to be deployed on a live server (Heroku free tier or similar is fine)
 4. The app has to be usable: Minimum requirement is that the rarity of each item in the collection can be queried / viewed
 5. There must be easy to follow documentation for other developers on how to configure their own collection metadata and deploy it to a server.
-
-As a good example check out this open source discord bot for OpenSea sales: https://github.com/0xEssential/opensea-discord-bot
+6. You have to hold a OneDayPunk to take part in the hackathon. They are currently available for ~50$ on [OpenSea](https://opensea.io/collection/onedaypunks). If you would like to take part but economically can't afford to right now, please reach out to jalil#1001 on discord and we'll figure something out.
 
 ## Intro
 
@@ -42,6 +41,8 @@ We need an interface for rarity score calculation... The easy way would be to sp
 - Please choose a common programming language/environment like NodeJS or Python.
 
 If this one goes well i can envision many more of these in the future!
+
+As a good example of an easy to install and configure package check out this open source discord bot for OpenSea sales: https://github.com/0xEssential/opensea-discord-bot
 
 ## Technical Details
 
