@@ -1,5 +1,7 @@
 # PunkScape Hackathon #1
 
+![Hackathon #1](https://user-images.githubusercontent.com/2725836/132677018-ed879bec-2169-462e-a03a-e99b72a7b37a.png)
+
 **Topic:** Open Source Package for easy Rarity Score Calculation
 
 **Reward Pool:** 3 ETH. <br>
@@ -12,20 +14,11 @@ All other participants in the first PunkScapes Hackathon will have savored the j
 
 **Deadline:** 26th of September
 
-**Requirements:**
-
-1. Only OneDayPunk owners may participate in the hackathon
-2. The app has to calculate a rarity score for each item in the given collection
-3. The app has to be deployed on a live server (Heroku free tier or similar is fine)
-4. The app has to be usable: Minimum requirement is that the rarity of each item in the collection can be queried / viewed
-5. There must be easy to follow documentation for other developers on how to configure their own collection metadata and deploy it to a server.
-6. You have to hold a OneDayPunk to take part in the hackathon. They are currently available for ~50$ on [OpenSea](https://opensea.io/collection/onedaypunks). If you would like to take part but economically can't afford to right now, please reach out to jalil#1001 on discord and we'll figure something out.
-
 ## Intro
 
 We need an interface for rarity score calculation... The easy way would be to spend ETH with platforms like "Rarity Tools" or "Rarity Sniper" and have them build it for us.
 
-- I built a basic rarity tool for another project and it was just a few hours of programming. I know that with 2-4 days/evenings of dedicated work someone can build something really cool and reusable and while i would love to do it i don't have the headspace right now.
+- I built a basic rarity tool for another project and it was just a few hours of programming. I know that with 2-4 days/evenings of dedicated work someone can build something really cool and reusable.
 - So instead of paying these projects 2-3 ETH i would like to invest that into our community to develop an open source tool we can share with the NFT community at large...
 
 ### The Race Is On...
@@ -43,6 +36,15 @@ We need an interface for rarity score calculation... The easy way would be to sp
 If this one goes well i can envision many more of these in the future!
 
 As a good example of an easy to install and configure package check out this open source discord bot for OpenSea sales: https://github.com/0xEssential/opensea-discord-bot
+
+## Requirements:
+
+1. Only OneDayPunk owners may participate in the hackathon
+2. The app has to calculate a rarity score for each item in the given collection
+3. The app has to be deployed on a live server (Heroku free tier or similar is fine)
+4. The app has to be usable: Minimum requirement is that the rarity of each item in the collection can be queried / viewed
+5. There must be easy to follow documentation for other developers on how to configure their own collection metadata and deploy it to a server.
+6. You have to hold a OneDayPunk to take part in the hackathon. They are currently available for ~50$ on [OpenSea](https://opensea.io/collection/onedaypunks). If you would like to take part but economically can't afford to right now, please reach out to jalil#1001 on discord and we'll figure something out.
 
 ## Technical Details
 
