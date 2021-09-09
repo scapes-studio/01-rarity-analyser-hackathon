@@ -43,8 +43,6 @@ We need an interface for rarity score calculation... The easy way would be to sp
 
 If this one goes well i can envision many more of these in the future!
 
-– jalil
-
 ## Technical Details
 
 - NFT collections have a metadata `JSON` file for each NFT in the collection, numbered by their `tokenID`. Examples (note the incrementing `tokenID` in the URL): 
@@ -104,6 +102,8 @@ All of this can be done on a per collection basis and data can be stored in memo
     "rarity_score": "129.59", // (The sum of all `attribute` rarity scores + missing trait rarity scores)
 },
 ```
+
+**Note about the "missing traits"**: As an example, in the OneDayPunks collection there are tokens that don't have hair. Or don't have a beard. In terms of rarity this is relevant (if most other items do have hair, then not having hair at all makes you rarer than others).
 
 #### Application
 The above should be 2-4 hours of simple coding.
