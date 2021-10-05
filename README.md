@@ -4,128 +4,78 @@
 
 **Topic:** Open Source Package for easy Rarity Score Calculation
 
-**Reward Pool:** 3 ETH. <br>
-<small>
-> The winning project will be paid 2 ETH. <br>
-0.7 ETH goes to the submission voted for 2nd place. <br>
-0.3 ETH goes to the submission voted for the 3rd place. <br>
-All other participants in the first PunkScapes Hackathon will have savored the joy of being part of it!
-</small>
+**Reward Pool:** 3 ETH
 
-**Deadline:** 26th of September
+## Recap
 
-## Intro
+We had 5 amazing applications built by the community...
+![Hackathon #1 - Recap - 0](https://user-images.githubusercontent.com/2725836/135978809-65872e57-33a6-4525-acc0-acd7ef0a01ba.png)
 
-We need an interface for rarity score calculation... The easy way would be to spend ETH with platforms like "Rarity Tools" or "Rarity Sniper" and have them build it for us.
+All with their own different approaches and solutions to the problem.
 
-- I built a basic rarity tool for another project and it was just a few hours of programming. I know that with 2-4 days/evenings of dedicated work someone can build something really cool and reusable.
-- So instead of paying these projects 2-3 ETH i would like to invest that into our community to develop an open source tool we can share with the NFT community at large...
+### 🥇 [OpenRarity](https://github.com/cryptoDevAmigos/rarity-analyzer) by [@ricklove](https://github.com/ricklove) and [@hemanCalvin](https://github.com/hemanCalvin)
+![Hackathon #1 - Recap - 2](https://user-images.githubusercontent.com/2725836/135979223-dbc4c3b9-b3a8-4b28-b627-72cb4b7c4bc6.png)
 
-### The Race Is On...
+### 🥈 [CoolRarity](https://github.com/fukuball/rarity-analyser) by [@fukuball](https://github.com/fukuball)
+![Hackathon #1 - Recap - 1](https://user-images.githubusercontent.com/2725836/135979219-54c6f30f-bd5f-415d-b856-5868c92116cc.png)
 
-- If you are a single developer/designer or a team of buddies who design & develop, then this is for you!
-- The first PunkScapes Hackathon will be launched with the goal of developing general purpose apps that
-  1. take in a collection of ERC721-NFT metadata, calculate the rarity for each trait / attribute as well as each item in the collection & makes that available via a simple metadata API and
-  2. makes the data easily queried / viewed in a web interface or via a Discord bot (or both 😅) and
-  3. has easy instructions for others to add their collection metadata, install the app on a simple server or platform (like Heroku / DigitalOcean / ...)
-- Deadline for the submission of completed projects is 27.09.2021 00:00 UTC.
-- The developed submissions are to be open sourced under the MIT license. Of course, you will forever be the authors of these projects but i think it would be very cool branding wise to make all of them available within a PunkScape Github Organisation.
-- All submissions will be put up for vote by the community as to which is best. Every holder of a OneDayPunk will have one vote.
-- Please choose a common programming language/environment like NodeJS or Python.
+### 🥉 [Rarity API](https://github.com/mikko-o/rarity-analyser) and [Interface](https://github.com/mikko-o/rarity-interface) by [@mikko-o](https://github.com/mikko-o)
+![Hackathon #1 - Recap - 5](https://user-images.githubusercontent.com/2725836/135979231-5e708fb7-ebe3-4ac8-91fa-1291b831290e.png)
 
-If this one goes well i can envision many more of these in the future!
+### [Rarity Analyzer](https://github.com/middlerange/rarity-analyzer) by [@0xNight](https://github.com/middlerange)
+![Hackathon #1 - Recap - 4](https://user-images.githubusercontent.com/2725836/135979230-1a774035-cd43-4f55-9183-d07dbc7f6b02.png)
 
-As a good example of an easy to install and configure package check out this open source discord bot for OpenSea sales: https://github.com/0xEssential/opensea-discord-bot
+### [Rarity Score](https://github.com/nishantrpai/rarity-score) by [@nishantrpai](https://github.com/nishantrpai)
+![Hackathon #1 - Recap - 3](https://user-images.githubusercontent.com/2725836/135979227-7a6a140f-4b0b-4849-939b-6722cef0ba4c.png)
 
-## Requirements:
+---
 
-1. Only OneDayPunk owners may participate in the hackathon
-2. The app has to calculate a rarity score for each item in the given collection
-3. The app has to be deployed on a live server (Heroku free tier or similar is fine)
-4. The app has to be usable: Minimum requirement is that the rarity of each item in the collection can be queried / viewed
-5. There must be easy to follow documentation for other developers on how to configure their own collection metadata and deploy it to a server.
-6. You have to hold a OneDayPunk to take part in the hackathon. They are currently available for ~50$ on [OpenSea](https://opensea.io/collection/onedaypunks). If you would like to take part but economically can't afford to right now, please reach out to jalil#1001 on discord and we'll figure something out.
+If you want to read up on the initial project specificatons, check out the [project intro](PROJECT_INTRO.md).
 
-## Technical Details
+---
 
-- NFT collections have a metadata `JSON` file for each NFT in the collection, numbered by their `tokenID`. Examples (note the incrementing `tokenID` in the URL): 
-  - [OneDayPunk #0](https://ipfs.io/ipfs/QmVtbahSw69pScLgwGUMTnVPR6FkVMeH5ntQimkn5bSD6y/0/metadata.json)
-  - [OneDayPunk #1](https://ipfs.io/ipfs/QmVtbahSw69pScLgwGUMTnVPR6FkVMeH5ntQimkn5bSD6y/1/metadata.json)
-  - [OneDayPunk #2](https://ipfs.io/ipfs/QmVtbahSw69pScLgwGUMTnVPR6FkVMeH5ntQimkn5bSD6y/2/metadata.json)
-  - ...
-  - [OneDayPunk #9999](https://ipfs.io/ipfs/QmVtbahSw69pScLgwGUMTnVPR6FkVMeH5ntQimkn5bSD6y/9999/metadata.json)
-- Most follow the extended [Metadata Standard defined by OpenSea](https://docs.opensea.io/docs/metadata-standards)
+## Sponsors
 
-The rarity of each property is calculated as follows:
+A huge shout out and ***Thank You*** to the sponsors of this hackathon...
 
-```
-e.g. 1: Property "Type", Attribute "Ape" 
-24 of 10000 have this attribute/property combination
-rarity(type) = 1/(24/10000) = 416.67
+[0x8646...a184](https://opensea.io/0x86462c40c07981f0900e0ad3df5d757a9dc4a184) for the 5.0 Ξ ($16,960.75 USD) purchase of [ODP #3100](https://punkscape.xyz/onedaypunks/3100)
 
-e.g. 2: Property "Nose", Attribute "What Nose?"
-212 of 10000 have this attribute/property combination
-rarity(nose) = 1/(212/10000) = 47.17
+[0x57f3...745c](https://opensea.io/0x57f350127d0625d472da8c3a938a45920cfb745c) for the 3.33 Ξ ($11,295.86 USD) purchase of [ODP #2386](https://punkscape.xyz/onedaypunks/2386)
 
-e.g. 3: Property "Nose", Attribute "" (not set)
-9788 of 10000 have this attribute/property combination
-rarity(nose) = 1/(9788/10000) = 1.02
-```
+[0x3e96...12eb](https://opensea.io/0x3e960bbbd921e040b0c90a31746d95c9b5dd12eb) for the 3.0 Ξ ($10,176.45 USD) purchase of [ODP #8498](https://punkscape.xyz/onedaypunks/8498)
 
-### Tasks:
+[0x9f39...52ce](https://opensea.io/0x9f39ed4e6d38dc7e599fd4d8f643a5810c7b52ce) for the 2.5 Ξ ($8,480.38 USD) purchase of [ODP #6089](https://punkscape.xyz/onedaypunks/6089)
 
-#### Data Crunching
-- [ ] The app lets the deployer configure a collection json file like this one: [collection.json](example-data/collection.json)
-- [ ] Take all metadata items and analyse their `attributes`.
-- [ ] Derive a rarity score for each attribute of each NFT item. Example: Property "Type", Attribute "Ape"; 24 of 10000 have this attribute/property combination; `rarity_score = 1/(24/10000) = 416.67`
-- [ ] Derive a rarity score for each NFT in the collection. The rarity score for each NFT is the **sum of all attributes**.
-- [ ] Account for missing `trait_type`s of an NFT.
-- [ ] Account for the `trait_count` of an NFT.
-- [ ] Calculate the Rarity Score for each token (SUM of all rare trait attributes / missing traits / trait counts).
-- [ ] Compute and store a `collection-rarities.json` file which can be exported for use elsewhere for the given collection.
+[0x3b35...e1a1](https://opensea.io/0x3b35524aedf141f3bce124a12fd928f80609e1a1) for the 2.0 Ξ ($6,784.30 USD) purchase of [ODP #372](https://punkscape.xyz/onedaypunks/372)
 
-All of this can be done on a per collection basis and data can be stored in memory & exposed via a simple API that spits out the metadata + rarity score data for each token. I imagine something like this (doesn't have to be exactly this structure - just an example...):
+[0x7b99...0feb](https://opensea.io/0x7b9997220d33d143bdc131acad832c7ee00b0feb) for the 1.99 Ξ ($6,750.38 USD) purchase of [ODP #4178](https://punkscape.xyz/onedaypunks/4178)
 
-```js
-// GET /api/0
-{
-    "id": 0,
-    "name": "One Day I'll Be A Punk #0",
-    "image": "ipfs://QmUZMuhGPFqAe1LiCxg9qZwNSXtLCYCi5D4aasYH5uiU9a",
-    "attributes": [
-        {
-            "trait_type": "type",
-            "value": "Human",
-            "percentile": "0.9879",
-            "rarity_score": "1.0122482033"
-        },
-        {
-            // ...
-        },
-    ],
-    "missing_traits": [
-      {
-        "trait_type": "glasses",
-        "percentile": "0.123",
-        "rarity_score": "123.45"
-      }
-    ],
-    "trait_count": {
-      "count": 4,
-      "percentile": "0.45",
-      "rarity_score": "2.0123"
-    },
-    "rarity_score": "129.59", // (The sum of all `attribute` rarity scores + missing trait rarity scores)
-},
-```
+[terryggg](https://opensea.io/0x67825c200346614b433fbdb2f2e8fd2a93c515e7) for the 1.9 Ξ ($6,445.09 USD) purchase of [ODP #5822](https://punkscape.xyz/onedaypunks/5822)
 
-**Note about the "missing traits"**: As an example, in the OneDayPunks collection there are tokens that don't have hair. Or don't have a beard. In terms of rarity this is relevant (if most other items do have hair, then not having hair at all makes you rarer than others).
+[Leeandkim-eth](https://opensea.io/0x60724dfa39e8ccb9d005915b079ebdd2cc5578a0) for the 1.5 Ξ ($5,088.23 USD) purchase of [ODP #3443](https://punkscape.xyz/onedaypunks/3443)
 
-#### Application
-The above should be 2-4 hours of simple coding.
-After that, let your creativity flow to make this a nice little application. Either build a simple discord bot or web interface to check out the rarities of each item in the collection.
+[0x0a79...5c19](https://opensea.io/0x0a79ffd132fa5720ec7123a2bd46bf6372475c19) for the 1.5 Ξ ($5,088.23 USD) purchase of [ODP #4464](https://punkscape.xyz/onedaypunks/4464)
 
-### Note:
-As an example, the OneDayPunk Collection has a small bug where tokens with only two traits have an extra, empty trait definition item `{}` (e.g.: token ID `281`). The application has to allow for these little inconsistensies / quirks and must still compute the rarity correctly.
+[0x3a5a...6231](https://opensea.io/0x3a5a8c837d74f16fa75c01087310d03125e66231) for the 1.0 Ξ ($3,392.15 USD) purchase of [ODP #2140](https://punkscape.xyz/onedaypunks/2140)
 
-Test your app against different metadata collections. You can download for example the BoredApeYachtClub metadata collection from here: https://ipfs.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/1 (you can download the entire folder with IPFS Desktop)...
+[0x7cb0...d47c](https://opensea.io/0x7cb05e2a8bd3beac988c9b8f6470eb054e08d47c) for the 1.0 Ξ ($3,392.15 USD) purchase of [ODP #5412](https://punkscape.xyz/onedaypunks/5412)
+
+[WilhelmTell](https://opensea.io/0x4e248177e428b97b1462a2056a8000c58c4dae05) for the 1.0 Ξ ($3,392.15 USD) purchase of [ODP #5905](https://punkscape.xyz/onedaypunks/5905)
+
+[0x3109...2949](https://opensea.io/0x3109d2ddc44823b8951df2f8c161d2d905332949) for the 0.99 Ξ ($3,358.23 USD) purchase of [ODP #2711](https://punkscape.xyz/onedaypunks/2711)
+
+[0x9fb4...1568](https://opensea.io/0x9fb4bcc1d6e58b882e7397ae5b047eac68461568) for the 0.89 Ξ ($3,019.01 USD) purchase of [ODP #5577](https://punkscape.xyz/onedaypunks/5577)
+
+[liogalab](https://opensea.io/0x3046312882115fc1a7d52150cbac93befb0b0cea) for the 0.8 Ξ ($2,713.72 USD) purchase of [ODP #3609](https://punkscape.xyz/onedaypunks/3609)
+
+[TheCryptoTherapist](https://opensea.io/0x5ae92b69725fab29524ee91ff5127a7159bf9d95) for the 0.6969 Ξ ($2,363.99 USD) purchase of [ODP #7458](https://punkscape.xyz/onedaypunks/7458)
+
+[DB910"](htps://opensea.io/0x8501fc1d5444f6be4f3e0215a1b3ad8752701054) for the 0.65 Ξ ($2,204.90 USD) purchase of [ODP #2338](https://punkscape.xyz/onedaypunks/2338)
+
+[0x33"](htps://opensea.io/0x331347f2c476df95bb9a2668764cbb1a9a0a5d93) for the 0.6 Ξ ($2,035.29 USD) purchase of [ODP #8219](https://punkscap.xyz/onedaypunks/8219")
+
+[0xcbba...ae75](https://opensea.io/0xcbbac906a26dc3830883d9b573c7d1245968ae75) for the 0.599 Ξ ($2,031.90 USD) purchase of [ODP #9265](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/9265)
+
+[Whalish](https://opensea.io/0x7b8860d7915cfe904a3774cec5259e8741409e51) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #281](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/281)
+
+[duuuuuuuuu](https://opensea.io/0x898275de7a7673789f101b2ace5d65c35d1ae20a) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #4606](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/4606)
