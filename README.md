@@ -36,7 +36,7 @@ If you want to read up on the initial project specificatons, check out the [proj
 
 ## Sponsors
 
-A huge shout out and ***Thank You*** to the sponsors of this hackathon...
+A huge shout out and ***Thank You*** to the early believers in the project! They made this hackathon possible...
 
 [0x8646...a184](https://opensea.io/0x86462c40c07981f0900e0ad3df5d757a9dc4a184) for the 5.0 Ξ ($16,960.75 USD) purchase of [ODP #3100](https://punkscape.xyz/onedaypunks/3100)
 
