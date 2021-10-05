@@ -72,10 +72,10 @@ A huge shout out and ***Thank You*** to the sponsors of this hackathon...
 
 [DB910](https://opensea.io/0x8501fc1d5444f6be4f3e0215a1b3ad8752701054) for the 0.65 Ξ ($2,204.90 USD) purchase of [ODP #2338](https://punkscape.xyz/onedaypunks/2338)
 
-[0x33](https://opensea.io/0x331347f2c476df95bb9a2668764cbb1a9a0a5d93) for the 0.6 Ξ ($2,035.29 USD) purchase of [ODP #8219](https://punkscap.xyz/onedaypunks/8219")
+[0x33](https://opensea.io/0x331347f2c476df95bb9a2668764cbb1a9a0a5d93) for the 0.6 Ξ ($2,035.29 USD) purchase of [ODP #8219](https://punkscape.xyz/onedaypunks/8219)
 
-[0xcbba...ae75](https://opensea.io/0xcbbac906a26dc3830883d9b573c7d1245968ae75) for the 0.599 Ξ ($2,031.90 USD) purchase of [ODP #9265](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/9265)
+[0xcbba...ae75](https://opensea.io/0xcbbac906a26dc3830883d9b573c7d1245968ae75) for the 0.599 Ξ ($2,031.90 USD) purchase of [ODP #9265](https://punkscape.xyz/onedaypunks/9265)
 
-[Whalish](https://opensea.io/0x7b8860d7915cfe904a3774cec5259e8741409e51) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #281](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/281)
+[Whalish](https://opensea.io/0x7b8860d7915cfe904a3774cec5259e8741409e51) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #281](https://punkscape.xyz/onedaypunks/281)
 
-[duuuuuuuuu](https://opensea.io/0x898275de7a7673789f101b2ace5d65c35d1ae20a) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #4606](hhttps://punkscape.xyz/onedaypunks/0x5537d90a4a2dc9d9b37bab49b490cf67d4c54e91/4606)
+[duuuuuuuuu](https://opensea.io/0x898275de7a7673789f101b2ace5d65c35d1ae20a) for the 0.5 Ξ ($1,696.08 USD) purchase of [ODP #4606](https://punkscape.xyz/onedaypunks/4606)
